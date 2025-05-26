@@ -1,0 +1,20 @@
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+body {
+    color: white;
+    background-color: black;
+    background-image: url("dot_16_g.png");
+    /* background-repeat: repeat; */
+}
+
+/* #splash {
+    width: 100vw;
+    height: 100vh;
+    /* background-color: black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
