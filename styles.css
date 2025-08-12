@@ -1,19 +1,61 @@
-body {
+/* body {
     margin: 0;
     overflow: hidden;
-}
+} */
 
 body {
     color: white;
     background-color: black;
-    background-image: url("dot_16_g.png");
+    background-image: url("img/dot_16_g.png");
     /* background-repeat: repeat; */
 }
+
+.splash_flat{
+    /* background-color: red;s */
+    margin: 15%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+
+.text_flat{
+    margin: 4em;
+    height: 8em;
+}
+
+.toilet_flat{
+    height: 16em;
+}
+
+/* .splash_flat img{
+    display: flex;
+} */
+
+@media (max-aspect-ratio: 1/1) {
+  .splash_flat {
+    margin: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .toilet_flat{
+    margin: 0em;
+    width: 16em;
+    height: auto;
+  }
+  .text_flat{
+    margin: 0em;
+    margin-top: 2em;
+    width: 20em;
+    height: auto;
+  }
+}
+
 
 /* #splash {
     width: 100vw;
     height: 100vh;
-    /* background-color: black; */
     display: flex;
     justify-content: center;
     align-items: center;
