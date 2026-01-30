@@ -1,19 +1,244 @@
 body {
-    margin: 0;
-    overflow: hidden;
-}
-
-body {
     color: white;
     background-color: black;
-    background-image: url("dot_16_g.png");
+    background-image: url("img/dot_16_g.png");
+    background-attachment: fixed;
+    font-family: Helvetica, Arial, sans-serif;
     /* background-repeat: repeat; */
 }
+
+/************************************************/
+
+.splash_flat{
+    /* background-color: red;s */
+    margin: 15%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+
+.text_flat{
+    margin: 4em;
+    height: 8em;
+}
+
+.toilet_flat{
+    height: 16em;
+}
+
+/************************************************/
+
+#videos {
+  height: auto;
+  overflow: hidden;
+  /* transition: height 0.5s ease-in-out 0.1s; */
+}
+
+h2{
+  /* display: flex; */
+  width: 100%;
+  border-bottom: 0.5px dashed white;
+  font-style: italic;
+  text-transform: uppercase;
+  letter-spacing: 1em;
+  /* justify-content: space-between; */
+}
+
+h2 button{
+  color: white;
+  background-color: black;
+}
+
+h3{
+  /* display: flex; */
+  width: 100%;
+  border-bottom: 0.5px dashed white;
+  font-style: italic;
+  text-transform: uppercase;
+  /* letter-spacing: 1em; */
+  /* justify-content: space-between; */
+}
+
+h3 button{
+  color: white;
+  background-color: black;
+}
+
+.video_grid{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.video_entry{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: black;
+  /* color: black;  */
+  margin: 2%;
+  width: calc(100% / 3.5);
+}
+
+.video_entry h4{
+  margin: 1%;
+  text-align: center;
+  /* text-transform: uppercase; */
+}
+
+.video_entry iframe{
+  height: 100%;
+  aspect-ratio: 1.33;
+}
+
+.video_info{
+  display: flex;
+  flex-direction: row;
+  margin: 0%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.video_info p{
+  text-align: center;
+  margin: 1%;
+}
+
+.video_info button{
+  display: none;
+  background: black;
+  color: white;
+  height: min-content;
+  border-radius: 100%;
+}
+
+.video_info2{
+  height: 0em;
+  display: flex;
+  margin: 5%;
+  text-align: justify;
+  overflow: hidden;
+}
+
+iframe{
+  /* display: flex; */
+  width: 100%;
+  height: auto;
+  border: 0px;
+  zoom: 50%;
+}
+
+#info {
+  height: 0em;
+  overflow: hidden;
+  /* transition: height 0.5s ease-in-out 0.1s; */
+}
+#assortert {
+  height: 0em;
+  overflow: hidden;
+  /* transition: height 0.5s ease-in-out 0.1s; */
+}
+
+#comic{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 0em;
+  overflow: hidden;
+}
+
+#comic_bck_btn{
+  aspect-ratio: 1;
+  background: black;
+  color: white;
+  height: min-content;
+  border-radius: 100%;
+}
+#comic_fwd_btn{
+  aspect-ratio: 1;
+  background: black;
+  color: white;
+  height: min-content;
+  border-radius: 100%;
+}
+
+#stripimg {
+  background-color: white;
+  width: 85%;
+  /* filter: invert(); */
+}
+
+a {
+  color: cyan;
+}
+
+footer {
+  display: flex;
+  font-style: italic;
+  width: 100%;
+  justify-content: space-between;
+  background-color: black;
+}
+
+footer p:hover{
+  font-style: italic;
+  font-weight: bold;
+  color: blue;
+}
+
+/************************************************/
+
+
+
+/************************************************/
+/************************************************/
+/************************************************/
+/************************************************/
+
+@media (max-aspect-ratio: 1/1) {
+  .splash_flat {
+    margin: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .toilet_flat{
+    margin: 0em;
+    width: 16em;
+    height: auto;
+  }
+  .text_flat{
+    margin: 0em;
+    margin-top: 2em;
+    width: 20em;
+    height: auto;
+  }
+
+  .video_grid{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .video_entry{
+  width: 95%;
+  }
+  h2{
+  /* display: flex; */
+  width: 100%;
+  border-bottom: 0.5px dashed white;
+  font-style: italic;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding-left: 25%;
+  /* justify-content: space-between; */
+}
+
+}
+
 
 /* #splash {
     width: 100vw;
     height: 100vh;
-    /* background-color: black; */
     display: flex;
     justify-content: center;
     align-items: center;
